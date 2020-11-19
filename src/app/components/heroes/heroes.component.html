@@ -1,0 +1,10 @@
+<div class="card-columns">
+    <div *ngFor="let heroe of arrHeroes; let i=index"class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ heroe.nombre }}</h5>
+          <p class="card-text">{{heroe.bio}}</p>
+          <p class="card-text"><small class="text-muted">{{ heroe.aparicion }} {{heroe.casa}}</small></p>
+          <a href="#" class="btn btn-primary" (click)="meGusta(heroe)">Me gusta</a>
+        </div>
+      </div>
+</div>
